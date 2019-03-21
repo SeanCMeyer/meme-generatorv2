@@ -29,10 +29,11 @@ export default class App extends Component {
     return (
       <div>
         <p>{this.state.message}</p>
-        <Image />
-        <Caption />
+        <Image /> {/* TODO: render Image returned from req sent*/}
+        <Caption /> {/* TODO: render meme text returned from req sent*/}
         <button onClick={this.handleRandomMeme}>click for random!</button>
-        <Thumbnails />
+        {/* TODO: save meme to DB*/}
+        <Thumbnails /> {/* TODO: render all images / memes in DB*/}
       </div>
     );
   }
